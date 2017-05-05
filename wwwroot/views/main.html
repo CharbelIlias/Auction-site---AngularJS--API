@@ -1,0 +1,22 @@
+
+    <div id="categoryBar" class="col-md-10">
+        <p id="Rubrik">Välj kategori</p> <select class="form-control" ng-model="SelectedCategory" ng-options="category as category.name for category in CategoryList">
+            <option value="">Alla</option></select>
+    </div><br><br>
+
+    <div id="searchbar" class="col-md-10">
+        <input class="form-control" type="text" ng-model="searchText" placeholder="Sök på auktioner"/>
+    </div>
+
+    <div class="col-sm-6"  ng-repeat="auction in AuctionList | filter : {categoryId: SelectedCategory.id, name:searchText, sold:false} | filter:{today:endTime}:dateComparison">
+      <div id="panelSize" class="panel panel-primary">
+        <div id="panelColor" class="panel-heading">{{auction.name}}</div>
+        <div class=" panel-body"><img src="{{auction.imageUrl}}" class="imageSize img-responsive" alt="Image"></div>
+        <div class="panel-footer"><a href="/auction/{{auction.id}}">Till auktionen</a><br>
+        <a href="/auction/Supplier/{{auction.supplierId}}">Detaljer om leverantör</a></div>
+      </div>
+    </div>
+
+
+
+

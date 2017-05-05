@@ -1,0 +1,194 @@
+/*body{
+    background-image: url('../Images/background.jpg');
+}*/
+
+#searchbar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#categoryBar{
+
+    padding-top: 20px;
+    text-align: center;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Rubrik {
+    font-family: "Josefin Sans";
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+#panelColor {
+    background-color: #0d4261;
+    font-family: "Josefin Sans";
+    font-size: 24px;   
+}
+
+a{
+    font-family: "Josefin Sans";
+    font-size: 24px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+ /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+.navbar {
+    
+    margin-bottom: 50px;
+    border-radius: 0;
+}
+    
+/* Remove the jumbotron's default bottom margin */ 
+.jumbotron {
+    background-color: #f77e05;
+    margin-bottom: 0;
+}
+   
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f77e05;
+    padding: 25px;
+}
+
+.imageSize {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+#DetailsDiv{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#panelSize{
+    width: 320px;
+}
+
+label {
+    font-family: "Josefin Sans";
+    font-size: 24px;   
+}
+
+.text-success {
+    font-family: "Josefin Sans";
+    font-size: 33px;   
+}
+
+.text-danger {
+    font-family: "Josefin Sans";
+    font-size: 18px;       
+}
+
+td{
+    font-family: "Josefin Sans";
+    font-size: 18px;          
+}
+
+p{
+    font-family: "Josefin Sans";    
+}
+
+#SupplierButton{
+    margin-left: -10px;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 16px;
+  margin-left: 10px;
+  height: 45px;
+}
+  
+.btn-lg {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  color: #0d4261;
+  background-color: #0d4261;
+  border-color: #0d4261;
+  font-family: "Josefin Sans";
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #0d4261;
+  background-color: #0d4261;
+  border-color: #0d4261;
+}
+
+/***********************
+  RAISED BUTTONS
+************************/
+.btn-primary.raised {
+    box-shadow: 0 3px 0 0 #0d4261;
+}
+.btn-primary.raised:active, .btn-primary.raised.active {
+    background: #0d4261;
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+}
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #0d4261;
+    color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #ffffff;
+}
+.btn-primary:active, .btn-primary.active {
+    background: #0d4261;
+    box-shadow: none;
+}

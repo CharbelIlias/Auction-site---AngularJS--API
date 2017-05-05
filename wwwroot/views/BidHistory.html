@@ -1,0 +1,16 @@
+<table class="table table-responsive table-striped">
+        <thead>
+            <tr>
+                <td>Bud</td>
+                <td>Lades</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="bid in BidList | orderBy: '-bidPrice'">
+               <td>Bud: {{bid.bidPrice}} kr</td>
+                <td>{{ bid.dateTime | date:"MM/dd/yyyy 'klockan' HH:mm" }}</td>
+            </tr>
+        </tbody>
+</table>
+
+<button class="btn btn-primary" ng-click="previousPage()">Föregående sida</button>

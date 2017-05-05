@@ -1,0 +1,21 @@
+<div id="DetailsDiv">
+    <div class="panel-info class">
+        <div class="panel-body">
+            <h1 id="Rubrik">{{Auction.name}}</h1>
+            <h3 id="Rubrik">{{ Auction.description }}</h3><br>
+            <img style="width:200px;" ng-src="{{Auction.imageUrl}}"/>
+        </div>
+    </div>
+    <div class="panel-info class">
+        <div class="panel-body">
+            <p>Slutdatum: {{Auction.endTime | date:"MM/dd/yyyy 'klockan' h:mm" }}</p>
+            <h4>Acceptpris {{Auction.buyNowPrice}} kr</h4>
+            <h3>Högsta bud: {{MaxBid}}</h3>
+            <input type="text" ng-model="Bid.bidPrice">
+            <button class="btn btn-primary" ng-click="CreateNewBid()">Lägg Bud</button><br>
+            <button class="btn btn-primary" ng-click="BuyNow()">Köp till Acceptpris</button><br>
+            <p><a href="/BidHistory/{{Auction.id}}">Budhistorik</a></p>
+        </div>
+    </div>
+    <button class="btn btn-primary" ng-click="previousPage()">Föregående sida</button>
+</div>

@@ -1,0 +1,51 @@
+
+<div class="col-md-6 col-md-offset-3">
+    <form name="customerform" novalidate ng-submit="Create()">
+            
+<div class="form-group">
+        <h1 class="text-success">Registrera dig</h1>
+</div>
+<div class="form-group">
+        <label class="control-label" for="firstName">Förnamn</label>
+        <input class="form-control" type="text" name="firstName" ng-model="customer.firstName" required>
+        <span class="text-danger" ng-show="customerform.firstName.$touched && customerform.firstName.$invalid">Du måste fylla i något!</span>
+</div>
+<div class="form-group">
+        <label class="control-label" for="lastName">Efternamn</label>
+        <input class="form-control" type="text" name="lastName" ng-model="customer.lastName" required>
+        <span class="text-danger" ng-show="customerform.lastName.$touched && customerform.lastName.$invalid">Du måste fylla i något!</span>
+</div>
+<div class="form-group">
+        <label class="control-label" for="address">Adress</label>
+        <input class="form-control" type="text" name="address" ng-model="customer.address" required>
+        <span class="text-danger" ng-show="customerform.address.$touched && customerform.address.$invalid">Du måste fylla i något!</span>
+</div>
+<div class="form-group">
+        <label class="control-label" for="postalCode">Postnr</label>
+        <input class="form-control" type="text" name="postalCode" ng-model="customer.postalCode" required>
+        <span class="text-danger" ng-show="customerform.postalCode.$touched && customerform.postalCode.$invalid">Du måste fylla i något!</span>
+</div>
+<div class="form-group">
+        <label class="control-label" for="city">Stad</label>
+        <input class="form-control" type="text" name="city" ng-model="customer.city" required>
+        <span class="text-danger" ng-show="customerform.city.$touched && customerform.city.$invalid">Du måste fylla i något!</span>
+</div>
+<div class="form-group">
+        <label class="control-label" for="phone">Telefonnr</label>
+        <input class="form-control" type="text" name="phone" ng-model="customer.phone" required>
+        <span class="text-danger" ng-show="customerform.phone.$touched && customerform.phone.$invalid">Du måste fylla i något!</span>
+</div>
+<div class="form-group">
+        <label class="control-label" for="email">Epost</label>
+        <input class="form-control" type="email" name="email" ng-model="customer.email" required>
+        <span class="text-danger" ng-show="customerform.email.$touched && customerform.email.$invalid">Ogiltig e-post!</span>
+</div>
+<div class="form-group">
+        <label class="control-label" for="password">Lösenord</label>
+        <input class="form-control" type="text" name="password" ng-model="customer.password" required>
+        <span class="text-danger" ng-show="customerform.password.$touched && customerform.password.$invalid">Du måste fylla i något!</span>
+</div>
+        <input class="btn btn-primary" ng-disabled="customerform.$invalid" type="submit" value="Skapa">
+        <button class="btn btn-primary" ng-click="previousPage()">Föregående sida</button>
+    </form>
+</div>
